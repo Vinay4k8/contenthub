@@ -4,10 +4,9 @@ import Store from "@/Models/StoreSchema";
 import connectToDB from "@/lib/connectToDB";
 import { auth } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
-import { getEnabledCategories } from "trace_events";
 
 
-export const findStore=async(storeId:string,userId:string)=>{
+const findStore=async(storeId:string,userId:string)=>{
 try {
 const store=await Store.find({_id:storeId,userId})
 

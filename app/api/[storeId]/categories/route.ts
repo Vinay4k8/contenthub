@@ -5,8 +5,7 @@ import connectToDB from "@/lib/connectToDB";
 import { auth } from "@clerk/nextjs";
 import { NextResponse } from "next/server";
 
-
-export const findStore=async(storeId:string,userId:string)=>{
+ const findStore=async(storeId:string,userId:string)=>{
 try {
 const store=await Store.find({_id:storeId,userId})
 
