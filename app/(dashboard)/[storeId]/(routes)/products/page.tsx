@@ -7,6 +7,11 @@ import ProductClient from './client'
 import connectToDB from '@/lib/connectToDB'
 import Category from '@/Models/CategorySchema'
 
+export const metadata={
+  title:"Products",
+  description:"Manage your products"
+}
+
 const ProductsPage = async({params}:{params:{storeId:string}}) => {
 
   connectToDB();

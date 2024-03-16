@@ -5,6 +5,12 @@ import { BillboardColumn } from './[billboardId]/components/coloumns'
 import {format} from "date-fns"
 
 
+
+export const metadata={
+  title:"Billboard",
+  description:"Manage your billboards"
+}
+
 const BillBoardsPage = async({params}:{params:{storeId:string}}) => {
 
   const response=await BillBoard.find({storeId:params.storeId}).sort({createdAt:-1})

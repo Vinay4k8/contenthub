@@ -11,6 +11,11 @@ interface SettingsPageProps{
     };
 }
 
+export const metadata={
+    title:"Settings",
+    description:"Manage your Store"
+  }
+
 const SettingsPage:React.FC<SettingsPageProps> =async ({params}) => {
     
     const {userId}=auth();

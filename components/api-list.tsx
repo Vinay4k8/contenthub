@@ -34,7 +34,6 @@ const ApiList = ({
           title='GET'
           description={`${origin}/api/${params.storeId}/${entityName}/{${entityId}}`}
           />
-          (In progress)
           <ApiAlert variant='admin'
           title='POST'
           description={`${origin}/api/${params.storeId}/${entityName}`}

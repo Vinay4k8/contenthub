@@ -8,6 +8,12 @@ import { formatter } from '@/lib/utils'
 import OrderClient from './components/client'
 
 
+
+export const metadata={
+  title:"Orders",
+  description:"Manage your orders"
+}
+
 const OrdersPage = async({params}:{params:{storeId:string}}) => {
 
   const c1=await OrderItem.countDocuments({});

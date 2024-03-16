@@ -6,6 +6,12 @@ import Category, { CategoryProps } from '@/Models/CategorySchema'
 import BillBoard from '@/Models/BillBoardSchema'
 
 
+
+export const metadata={
+  title:"Categories",
+  description:"Manage your categories"
+}
+
 const CategorysPage = async({params}:{params:{storeId:string}}) => {
 
   const response=await Category.find({storeId:params.storeId}).sort({createdAt:-1})

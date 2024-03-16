@@ -6,6 +6,12 @@ import { formatter } from '@/lib/utils'
 import { CreditCard, IndianRupee, Package } from 'lucide-react'
 import React from 'react'
 
+
+export const metadata={
+  title:"Dashboard",
+  description:"Welcome to Dashboard"
+}
+
 const DashboardPage = async({params}:{params:{storeId:string}}) => {
 
 
